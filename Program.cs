@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Concurrent;
 
 namespace AdvanceDotnet
 {
@@ -70,6 +70,18 @@ namespace AdvanceDotnet
             {
                 Console.WriteLine(a);
             }
+            // Calculate the volum.
+            Box b1 = new Box();
+            b1.Length = 5.55;
+            b1.Breadth = 5.1;
+            b1.Height = 1.2;
+            double Volumn = b1.Length * b1.Breadth * b1.Height;
+            Console.WriteLine("The volume of box:" + Volumn);
+
+            // calling interface
+            Solution s1 = new Solution();
+            s1.FindPrime(6);
+            s1.getOdd(6);
 
             Console.ReadKey();
         }
